@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_task/app/data/network/authentication-service.dart';
+import 'package:flutter_task/helpers/global-variables.dart';
 import 'package:flutter_task/helpers/utils-helpers.dart';
 import 'package:flutter_task/presentation/components/default-text-form-field.dart';
 import 'package:flutter_task/presentation/components/floating-text-fleid.dart';
@@ -295,8 +296,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
            const LoginScreen()),
      );
    }).catchError((error){
+     pr.hide();
      print(error);
-     Navigator.pop(context);
    });
   }
 }

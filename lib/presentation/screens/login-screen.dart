@@ -184,8 +184,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   const HomeScreen()),
         );
       }).catchError((error){
+        pr.hide();
         print(error);
-        Navigator.pop(context);
       });
     }else{
       AlertManager.showToast("Please fill in all fields");

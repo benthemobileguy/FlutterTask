@@ -15,7 +15,6 @@ class UtilsHelpers{
   static Future<bool> showProgressBar(BuildContext context, String text) {
     pr = ProgressDialog(
       context,
-      isDismissible: false,
       type: ProgressDialogType.Normal,
     );
     //Dialog Style
