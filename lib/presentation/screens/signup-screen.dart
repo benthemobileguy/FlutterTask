@@ -131,31 +131,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 controller: confirmPassController,
                 prefixIcon: ImageAssets.password,
                 hintText: 'Confirm password',
-                suffixIcon: Container(
-                  child: IconButton(
-                      icon: obscurity2
-                          ? SvgPicture.asset(
-                        "assets/images/show.svg",
-                        color: ColorManager.grey2,
-                      )
-                          : SvgPicture.asset(
-                        "assets/images/hide.svg",
-                        color: ColorManager.grey2,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          obscurity2 = !obscurity2;
-                        });
-                      }),
-                ),
+                suffixIcon: IconButton(
+                    icon: obscurity2
+                        ? SvgPicture.asset(
+                      "assets/images/show.svg",
+                      color: ColorManager.grey2,
+                    )
+                        : SvgPicture.asset(
+                      "assets/images/hide.svg",
+                      color: ColorManager.grey2,
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        obscurity2 = !obscurity2;
+                      });
+                    }),
                 borderColor: ColorManager.borderColor,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 children: [
-                  Container(
+                  SizedBox(
                     width: 20,
                     height: 20,
                     child: Checkbox(
