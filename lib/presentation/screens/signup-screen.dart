@@ -105,6 +105,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               DefaultTextFormField(
                 prefixIcon: ImageAssets.password,
                 hintText: AppStrings.loginHint2,
+                controller: passController,
                 suffixIcon: Container(
                   child:IconButton(
                       icon: obscurity
