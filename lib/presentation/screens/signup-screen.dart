@@ -85,8 +85,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 height: 20,
               ),
               DefaultTextFormField(
-                controller: dobController,
-                hintText: 'July 13, 1997',
+                controller: emailController,
+                hintText: 'jameschimdindu@gmail.com',
                 borderColor: ColorManager.borderColor,
                 prefixIcon: ImageAssets.dob,
               ),
@@ -94,8 +94,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 height: 20,
               ),
               DefaultTextFormField(
-                controller: passController,
-                hintText: 'Password',
+                controller: dobController,
+                hintText: 'July 13, 1997',
                 borderColor: ColorManager.borderColor,
                 prefixIcon: ImageAssets.user,
               ),
@@ -124,7 +124,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 borderColor: ColorManager.borderColor,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               DefaultTextFormField(
