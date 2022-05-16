@@ -10,14 +10,9 @@ class ApiException implements Exception {
       {this.code,
        this.message,
         this.preventRedirect = false,
-       this.context}) {
-    print(code);
+        this.context}) {
     switch (code) {
-      case 573:
-        break;
-      default:
-       //show alert dialog here
-        break;
+
     }
   }
 }

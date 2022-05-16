@@ -5,7 +5,7 @@ import 'package:hexcolor/hexcolor.dart' as hex;
 import 'package:flutter_task/helpers/utils-helpers.dart';
 import 'package:flutter_task/presentation/resources/assets-manager.dart';
 import 'package:flutter_task/presentation/resources/color-manager.dart';
-import 'package:flutter_task/presentation/resources/main-button.dart';
+import 'package:flutter_task/presentation/components/main-button.dart';
 import 'package:flutter_task/presentation/resources/strings-manager.dart';
 import 'package:flutter_task/presentation/resources/values-manager.dart';
 class OnboardingScreen extends StatefulWidget {
@@ -23,22 +23,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       extendBodyBehindAppBar: true,
       backgroundColor: ColorManager.white,
       body: Container(
-        padding: EdgeInsets.only(top: AppPadding.p28),
+        padding: const EdgeInsets.only(top: AppPadding.p28),
         child: SingleChildScrollView(
           child: Column(
             children: [
              Image.asset(ImageAssets.splashLogo, width: 120, height: 24,),
-              SizedBox(height: AppMargin.m20,),
+              const SizedBox(height: AppMargin.m20,),
               Container(
-                margin: EdgeInsets.only(left: AppMargin.m16),
+                margin: const EdgeInsets.only(left: AppMargin.m16),
                   height: AppMargin.m340,
                   width: double.infinity,
                   child: Image.asset(ImageAssets.peopleLogo),
 
               ),
-              SizedBox(height: AppMargin.m10,),
+              const SizedBox(height: AppMargin.m10,),
               Image.asset(ImageAssets.gradientLogo, width: 280, height: 55,),
-              SizedBox(height: AppMargin.m20,),
+              const SizedBox(height: AppMargin.m20,),
               Text(AppStrings.onboardingText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -47,9 +47,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   color: ColorManager.grey,
                   height: 1.5,
                   fontWeight: FontWeight.normal),),
-              SizedBox(height: AppMargin.m20,),
+              const SizedBox(height: AppMargin.m20,),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 12),
                 height: 55,
                 width: double.infinity,
                 child: MainButton(
@@ -61,18 +61,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              LoginScreen()),
+                              const LoginScreen()),
                     );
                   },
                   text: 'Login',
                   icon: '',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppMargin.m10,
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 12),
                 height: 55,
                 width: double.infinity,
                 child: MainButton(
@@ -84,14 +84,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              RegisterScreen()),
+                              const RegisterScreen()),
                     );
                   },
                   text: 'Sign up',
                   icon: '',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppMargin.m40,
               ),
             ],

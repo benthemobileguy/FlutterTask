@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_task/presentation/resources/font-manager.dart';
 
 class MainButton extends StatelessWidget {
   final Function() onPressed;
@@ -42,7 +43,7 @@ class MainButton extends StatelessWidget {
                 color: textColor,
                 fontSize: 16,
                 fontFamily: 'Nunito',
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeightManager.bold,
               ),
             ),
           ],

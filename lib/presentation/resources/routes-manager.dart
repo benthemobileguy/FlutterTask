@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/presentation/resources/strings-manager.dart';
-import 'package:flutter_task/presentation/screens/home-screen.dart';
+import 'package:flutter_task/presentation/screens/home/home-screen.dart';
 import 'package:flutter_task/presentation/screens/login-screen.dart';
 import 'package:flutter_task/presentation/screens/onboarding-screen.dart';
 import 'package:flutter_task/presentation/screens/signup-screen.dart';
